@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Asalah Albinaa – Services</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ---------- GLOBAL STYLES ---------- */
+    :root {
+      --primary: #d19a43;
+      --primary-dark: #b78122;
+      --text: #222;
+      --muted: #666;
+      --bg: #fff;
+      --radius: 14px;
+      --shadow: 0 8px 22px rgba(0, 0, 0, 0.07);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      padding: 50px 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      max-width: 1100px;
+      width: 100%;
+    }
+
+    /* ---------- SECTION LAYOUT ---------- */
+    .section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 40px;
+      margin-bottom: 70px;
+    }
+
+    .section.reverse {
+      flex-direction: row-reverse;
+    }
+
+    .text {
+      flex: 1 1 420px;
+    }
+
+    .image {
+      flex: 1 1 420px;
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+
+    .image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      aspect-ratio: 16/10;
+    }
+
+    /* ---------- HEADINGS & LABEL ---------- */
+    .label {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(209, 154, 67, 0.1);
+      color: var(--primary-dark);
+      padding: 8px 14px;
+      border-radius: 10px;
+      font-weight: 600;
+      margin-bottom: 14px;
+      font-size: 15px;
+    }
+
+    .label span {
+      font-size: 18px;
+    }
+
+    h2 {
+      font-size: 26px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    p {
+      color: var(--muted);
+      font-size: 15px;
+      margin-bottom: 18px;
+      max-width: 600px;
+    }
+
+    /* ---------- FEATURE LIST ---------- */
+    ul {
+      list-style: none;
+      margin-bottom: 22px;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--muted);
+      font-size: 15px;
+      margin-bottom: 8px;
+    }
+
+    .check {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      border: 2px solid var(--primary);
+      color: var(--primary-dark);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 13px;
+      flex-shrink: 0;
+    }
+
+    /* ---------- BUTTON ---------- */
+    .btn {
+      display: inline-block;
+      padding: 10px 18px;
+      background: var(--primary);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 14px;
+      box-shadow: 0 6px 15px rgba(209, 154, 67, 0.3);
+      transition: 0.2s ease;
+    }
+
+    .btn:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 900px) {
+      .section {
+        flex-direction: column;
+      }
+
+      .section.reverse {
+        flex-direction: column;
+      }
+
+      h2 {
+        font-size: 22px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- Residential Interiors -->
+    <section class="section">
+      <div class="text">
+        <div class="label"><span>🏠</span> Residential Interiors</div>
+        <h2>Transform your home into a personal sanctuary</h2>
+        <p>Transform your home into a personal sanctuary with our comprehensive residential interior design services.</p>
+
+        <ul>
+          <li><span class="check">✓</span> Space planning and layout optimization</li>
+          <li><span class="check">✓</span> Custom furniture design and selection</li>
+          <li><span class="check">✓</span> Color consultation and material selection</li>
+          <li><span class="check">✓</span> Lighting design and installation coordination</li>
+          <li><span class="check">✓</span> Project management from concept to completion</li>
+        </ul>
+
+        <a href="#" class="btn">Get Started</a>
+      </div>
+
+      <div class="image">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1400" alt="Residential Interiors">
+      </div>
+    </section>
+
+    <!-- Commercial Interiors -->
+    <section class="section reverse">
+      <div class="text">
+        <div class="label"><span>🏢</span> Commercial Interiors</div>
+        <h2>Create inspiring work environments</h2>
+        <p>Create inspiring work environments that enhance productivity and reflect your brand identity.</p>
+
+        <ul>
+          <li><span class="check">✓</span> Office space design and planning</li>
+          <li><span class="check">✓</span> Retail and hospitality design</li>
+          <li><span class="check">✓</span> Brand integration and corporate identity</li>
+          <li><span class="check">✓</span> Sustainable design solutions</li>
+          <li><span class="check">✓</span> Code compliance and accessibility</li>
+        </ul>
+
+        <a href="#" class="btn">Get Started</a>
+      </div>
+
+      <div class="image">
+        <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=1400" alt="Commercial Interiors">
+      </div>
+    </section>
+
+    <!-- Architectural Design -->
+    <section class="section">
+      <div class="text">
+        <div class="label"><span>🏗️</span> Architectural Design</div>
+        <h2>Comprehensive architectural services</h2>
+        <p>Comprehensive architectural services from initial concept through construction administration.</p>
+
+        <ul>
+          <li><span class="check">✓</span> Conceptual design and feasibility studies</li>
+          <li><span class="check">✓</span> Schematic design and development</li>
+          <li><span class="check">✓</span> Construction documentation</li>
+          <li><span class="check">✓</span> Building permits and regulatory approval</li>
+          <li><span class="check">✓</span> Construction administration</li>
+        </ul>
+
+        <a href="#" class="btn">Get Started</a>
+      </div>
+
+      <div class="image">
+        <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=1400" alt="Architectural Design">
+      </div>
+    </section>
+
+    <!-- Repeated Commercial Section (optional) -->
+    <section class="section reverse">
+      <div class="text">
+        <div class="label"><span>🏢</span> Commercial Interiors</div>
+        <h2>Create inspiring work environments</h2>
+        <p>Design spaces that boost creativity and productivity while reflecting your corporate style.</p>
+
+        <ul>
+          <li><span class="check">✓</span> Office space design and planning</li>
+          <li><span class="check">✓</span> Retail and hospitality design</li>
+          <li><span class="check">✓</span> Sustainable design solutions</li>
+        </ul>
+
+        <a href="#" class="btn">Get Started</a>
+      </div>
+
+      <div class="image">
+        <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=1400" alt="Office Interior">
+      </div>
+    </section>
+
+  </div>
+</body>
+</html>
